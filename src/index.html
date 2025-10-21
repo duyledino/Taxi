@@ -38,11 +38,10 @@
         </p>
         <h2 class="text-[#FBBD23] lg:text-4xl text-2xl font-semibold">Phục vụ 24/7</h2>
         <div class="flex sm:flex-row flex-col gap-4 justify-between sm:w-max w-full">
-          <a
+          <a href="tel:0856665959"
             class="phone text-lg cursor-pointer rounded-md text-[#212327] bg-[#FBBD23] px-5 py-3 inline-block">
             <i class="fa-solid fa-phone"></i> Gọi Ngay: 0856665959
           </a>
-          <a href="tel:+84856665959">Call Now (085 666 5959)</a>
             <button class="text-lg rounded-md cursor-pointer text-white bg-[#212327] px-5 py-3">
               <a href="#bangGia" class="block w-full h-full">Xem Bảng Giá</a>
             </button>
@@ -145,7 +144,7 @@
             <button
             class="text-lg rounded-md text-[#000] bg-white transition-all hover:bg-[#FBBD23] hover:text-white px-5 py-3 border-gray-200 border-[0.5px] w-full cursor-pointer"
           >
-            <i class="fa-solid fa-phone"></i> Đặt Xe Ngay
+            <a href="tel:0856665959" class="block w-full h-full"><i class="fa-solid fa-phone"></i> Đặt Xe Ngay</a>
           </button>
           </div>
           <div
@@ -166,9 +165,9 @@
               <li class="list-none flex gap-2 items-center"><i class="fa-solid fa-check text-[#FBBD23]"></i><p>Tài xế kinh nghiệm</p></li>
             </ul>
             <button
-            class="text-lg rounded-md text-[#000] transition-all bg-[#FBBD23] px-5 py-3 border-gray-200 border-[0.5px] w-full cursor-pointer"
+            class="phone text-lg rounded-md text-[#000] transition-all bg-[#FBBD23] px-5 py-3 border-gray-200 border-[0.5px] w-full cursor-pointer"
           >
-            <i class="fa-solid fa-phone"></i> Đặt Xe Ngay
+            <a href="tel:0856665959" class="block w-full h-full"><i class="fa-solid fa-phone"></i> Đặt Xe Ngay</a>
           </button>
           </div>
       </div>
@@ -214,7 +213,7 @@
           <button
             class=" text-lg rounded-md text-[#212327] bg-[#FBBD23] shadow-[0px_0px_10px_#FBBD23] cursor-pointer hover:scale-105 transition-all px-5 py-3"
           >
-            <i class="fa-solid fa-phone"></i> Gọi Ngay: 0856665959
+          <a href="tel:0856665959" class="block w-full h-full"><i class="fa-solid fa-phone"></i> Gọi Ngay: 0856665959</a>
           </button>
         </div>
       </div>
@@ -237,11 +236,5 @@
   });
 
 document.querySelectorAll('.fade').forEach(el => observer.observe(el));
-const phone = document.querySelector(".phone");
-phone.addEventListener('click', (e) => {
-    console.log(e.target);
-    // Change "tel:+0856665959" to "tel:+84856665959"
-    window.location.href = "tel:+84856665959";
-});
 </script>
 </html>
